@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>br.com.jbse.base</groupId>
+		<artifactId>base-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>base-shared</artifactId>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+			</resource>
+
+			<resource>
+				<directory>src/test/java</directory>
+				<excludes>
+					<exclude>**</exclude>
+				</excludes>
+			</resource>
+
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+			</resource>
+
+		</resources>
+	</build>
+</project>
